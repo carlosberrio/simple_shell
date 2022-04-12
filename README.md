@@ -51,9 +51,9 @@ Use system calls only when you need to (why?)
 * write (man 2 write)
 
 ## Authors
-<img src = https://cdn-icons-png.flaticon.com/512/25/25231.png width = "30xp" align= 'center'/> [Alejandro Caballero](https://github.com/Caballero18) |[ Carlos Berrio](https://github.com/carlosberrio) | [José Petro]()
+<img src = https://cdn-icons-png.flaticon.com/512/25/25231.png width = "30xp" align= 'center'/> [Alejandro Caballero](https://github.com/Caballero18) |[ Carlos Berrio](https://github.com/carlosberrio) | [José Petro](https://github.com/Giu13sse)
 
-<img src = https://cdn-icons-png.flaticon.com/512/60/60580.png width = "30xp" align= 'center'/> [Alejandro Caballero](https://twitter.com/Alejand51178128) | [Carlos Berrio]() | [José Petro]()
+<img src = https://cdn-icons-png.flaticon.com/512/60/60580.png width = "30xp" align= 'center'/> [Alejandro Caballero](https://twitter.com/Alejand51178128) | [Carlos Berrio](https://twitter.com/CarlosBerro6) | [José Petro](https://twitter.com/Rex_Giusse)
 
 Holberton School - Foundations - Low-level programming & Algorithm  Linux and Unix system programming.
 April, 2022. Medellín, Colombia.
