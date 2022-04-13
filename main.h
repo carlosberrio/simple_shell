@@ -19,6 +19,7 @@
 /*global environment variable */
 
 /* String Handlers */
+void handle_signal(int sn);
 
 /* Path & Search Handlers */
 
@@ -27,5 +28,9 @@
 /* Simple Shell Handlers */
 
 /*STRUCTURES*/
+info(){
+
+};
+flags(){}
 
 #endif /* MAIN_H */
