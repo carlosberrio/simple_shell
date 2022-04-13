@@ -1,0 +1,34 @@
+.TH "" "" "" "" ""
+.hy
+.PP
+\&.\[dq] Manpage for Simple_Shell(3).
+\&.TH man 3 \[lq]22 april 2022\[rq] \[lq]1.0\[rq] \[dq]Simple_shell(3) man
+page\[dq] .SH NAME Simple_Shell(3) \- formatted output conversion .SH
+.SH NAME
+Orden de la función Descripción de la orden/función/programa
+Breve descripción de la función, orden o programa.
+.SH SYNOPSIS
+.B Nombre de la orden
+Opciones de la función (orden o programa) (caso de función)
+.SH DESCRIPTION
+Descripción detallada de las ordenes y sus opciones.
+en el caso de una función se deben describir los parámetros de la interfaz
+Los parámetros se introducen con la opción .PP
+.PP
+Este es un párrafo nuevo.
+Las nuevas líneas se introducen con .br
+.br
+Esta es una nueva línea
+.SH FILES
+Los ficheros que necesita la orden/función Por ejemplo la orden passwd(1)
+utiliza el fichero /etc/passwd.
+.SH SEE ALSO
+Referencia a documentos afines, incluyendo otras páginas del manual.
+.SH BUGS
+Detalles sorprendentes (no siempre tienen que ser problemas)
+.SH AUTHOR
+\&.SH AUTHORS
+.IP \[bu] 2
+José Petro (Github \[at]giu13sse)
+.IP \[bu] 2
+Carlos Berrio (Github \[at]carlosberrio)
