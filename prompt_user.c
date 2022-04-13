@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * prime_user: 
+ * prompt_user: 
  * 
  * @
  * Return: 
  */
 
-char prime_user( )
+char prompt_user( )
