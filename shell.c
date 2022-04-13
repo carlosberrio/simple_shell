@@ -42,7 +42,7 @@ if (!pathcommand)
 perror(argvtr[0]);
 else
 //*execution(pathcommand, command);
-}
+)
 if (linesize < 0 && flags.interactive)
 write(STDERR_FILENO, "\n", 1);
 free(line);
