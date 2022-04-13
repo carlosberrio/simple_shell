@@ -2,7 +2,7 @@
 
 /**
  * tokenizer - Function that split a string.
- * @s: string to split.
+ * @str: string to split.
  * @worde: words delimiter.
  * Return: separated words
  */
@@ -11,7 +11,7 @@ char **tokenizer(char *str, char *worde)
 {
 int i = 0, cow = 0;
 char **separated_words = NULL;
-cow = count_of_words(s);
+cow = count_of_words(str);
 
 separated_words = malloc(sizeof(char *) * (cow + 1));
 if (separated_words == NULL)
@@ -19,8 +19,8 @@ if (separated_words == NULL)
 perror("Error");
 return (NULL);
 }
-separated_words[0] = strtok(s, worde);
-if (splited_words[0] == NULL)
+separated_words[0] = strtok(str, worde);
+if (separated_words[0] == NULL)
 {
 free(separated_words[0]);
 free(separated_words);
