@@ -11,6 +11,7 @@
 #include <stddef.h>
 #include <unistd.h>
 #include <signal.h>
+#include <stdbool.h>
 
 /* PROTOTYPES */
 
@@ -28,9 +29,15 @@ void handle_signal(int sn);
 /* Simple Shell Handlers */
 
 /*STRUCTURES*/
-info(){
+struct info
+{
+	int final_exit;
+	int ln_count;
+} info;
 
-};
-flags(){}
+struct flags
+{
+	bool interactive;
+} flags;
 
 #endif /* MAIN_H */
