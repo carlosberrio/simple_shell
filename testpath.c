@@ -24,11 +24,11 @@ break;
 if (path == NULL)
 return (NULL);
 tokenized_path = tokenizer(path, "=:");
-for (k = 1; tokenized_path[j]; k++)
+for (k = 1; tokenized_path[k]; k++)
 {
 path_new = _strdup(tokenized_path[k]);
 _strcat(path_new, "/");
-_strcat(path_new, tokens[0]);
+_strcat(path_new, token[0]);
 if (access(path_new, F_OK) == 0)
 {
 free(path);
