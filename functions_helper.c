@@ -1,31 +1,16 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
- * _strrev - Function that reverse a string
- * @str: string to reverse
- * Return: reversed string
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-
-char *_strrev(char *str)
+int _putchar(char c)
 {
-int i;
-int len = 0;
-char c;
-
-if (!str)
-return (NULL);
-while (str[len] != '\0')
-{
-len++;
-}
-for (i = 0; i < (len / 2); i++)
-{
-c = str[i];
-str[i] = str[len - i - 1];
-str[len - i - 1] = c;
-}
-return (str);
-}
+return (write(1, &c, 1));
 
 /**
 * _itoa - Function that converts any value from int to string
@@ -59,4 +44,20 @@ if (sign)
 *str = '\0';
 _strrev(strout);
 return (strout);
+}
+
+/**
+ * _strlen - function that gets the length of a string
+ * @string: string to be evaluated.
+ * Return: length of the string
+ */
+
+int _strlen(char *string)
+{
+int i = 0;
+
+while (string[i])
+i++;
+
+return (i);
 }
