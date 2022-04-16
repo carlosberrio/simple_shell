@@ -29,6 +29,12 @@ void free_buffers(char **buf);
 /* Simple Shell Handlers */
 
 /*STRUCTURES*/
+struct builtin
+{
+	char *env;
+	char *exit;
+} builtin;
+
 struct info
 {
 	int final_exit;
