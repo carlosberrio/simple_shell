@@ -25,7 +25,7 @@ void handle_signal(int sn);
 /* Path & Search Handlers */
 
 /* Built-ins Functions */
-
+void free_buffers(char **buf);
 /* Simple Shell Handlers */
 
 /*STRUCTURES*/
