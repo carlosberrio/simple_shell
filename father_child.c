@@ -4,7 +4,27 @@
  * fork_execute - create child process and execute cmd
  * @cmd: command or file to execute
  * @p: struct with arguments
+ * struct params - object with all variables
+ * @argv: arguments from user
+ * @loop: num of times prompt has been showed
+ * @found: used to find files with stat()
+ * @buff: used with getline()
+ * @cmd: command = path + argv[0]
+ * @name: name of executable used in errors
+ * @exit_value: int used for return
  */
+
+typedef struct params
+{
+	char **argv;
+	int *loop;
+	struct stat found;
+	char *buff;
+	char *cmd;
+	char *name;
+	int exit_value;
+} params;
+
 void fork_execute(char *cmd, params *p)
 {
 pid_t check;
@@ -53,5 +73,4 @@ fork_execute(p->cmd, p);
 else
 not_found_error(p);
 free(p->cmd);
-}
 }

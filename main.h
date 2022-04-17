@@ -73,6 +73,7 @@ struct flags
 	bool interactive;
 } flags;
 
+<<<<<<< HEAD
 
 typedef struct params
 {
@@ -85,4 +86,6 @@ typedef struct params
 	int exit_value;
 } params ;
 
+=======
+>>>>>>> 53cb5a23cf918ebe33fb76374140391f18caeedc
 #endif /* MAIN_H */
