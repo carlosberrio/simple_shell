@@ -44,7 +44,7 @@ int handle_builtin(char **command, char *line);
 void handle_signal(int sn);
 
 /* Path & Search Handlers */
-char *testpath(char **token);
+char *test_path(char **path, char *command);
 char prompt_user(void);
 
 
@@ -54,8 +54,21 @@ void free_buffers(char **buf);
 int main(int argcnt, char **argvtr, char *envvtr[]);
 void simple_exec(params *p);
 void fork_execute(char *cmd, params *p);
+char *index_path(char *path, char *command);
 
 /*STRUCTURES*/
+
+
+typedef struct params
+{
+	char **argv;
+	int *loop;
+	struct stat found;
+	char *buff;
+	char *cmd;
+	char *name;
+	int exit_value;
+} params;
 struct builtin
 {
 	char *env;
