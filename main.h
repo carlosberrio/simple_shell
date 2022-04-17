@@ -7,11 +7,14 @@
 #include <unistd.h>
 #include <string.h>
 #include <sys/wait.h>
+#include <sys/stat.h>
 #include <errno.h>
 #include <stddef.h>
 #include <unistd.h>
 #include <signal.h>
 #include <stdbool.h>
+#include <dirent.h>
+
 
 /* PROTOTYPES */
 char **tokenizer(char *str, char *worde);
