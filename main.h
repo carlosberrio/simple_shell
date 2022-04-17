@@ -14,19 +14,38 @@
 #include <stdbool.h>
 
 /* PROTOTYPES */
+char **tokenizer(char *str, char *worde);
+char *_strrev(char *str);
+char *_strcat(char *dest, char *src);
+int _strcmp(char *s1, char *s2);
+char *_strdup(char *str);
+int _strlen(char *string)
+char handlesignal(int l);
+int count_of_words(char *str);
+int checker(char **cmd, char *buf);
+void print_env(void);
+void free_buffers(char **buf);
+void exit_cmd(char **command, char *line);
+void execution(char *cmds, char **cmdv);
+int _putchar(char c);
+char *_itoa(int i, char *strout, int base);
+void print_error(char *program_name, char *input, int error_num);
 
 /*-----Aux functions-----*/
 
-/*global environment variable */
 
 /* String Handlers */
 void handle_signal(int sn);
 
 /* Path & Search Handlers */
+char *testpath(char **token);
+char prompt_user(void);
 
-/* Built-ins Functions */
 
 /* Simple Shell Handlers */
+int main(int argcnt, char **argvtr, char *envvtr[]);
+void simple_exec(params *p);
+void fork_execute(char *cmd, params *p);
 
 /*STRUCTURES*/
 struct info

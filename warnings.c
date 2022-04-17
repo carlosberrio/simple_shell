@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * @print_error - 
+ * @program_name: 
+ * @input: 
+ * @error_num:
+ * Return: 
+ */
 
 void print_error(char *program_name, char *input, int error_num)
 {
