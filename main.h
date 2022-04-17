@@ -13,7 +13,7 @@
 #include <unistd.h>
 #include <signal.h>
 #include <stdbool.h>
-#include <dirent.h>
+
 
 
 /* PROTOTYPES */
@@ -61,5 +61,16 @@ struct flags
 {
 	bool interactive;
 } flags;
+
+typedef struct params
+{
+	char **argv;
+	int *loop;
+	struct stat found;
+	char *buff;
+	char *cmd;
+	char *name;
+	int exit_value;
+} params;
 
 #endif /* MAIN_H */
