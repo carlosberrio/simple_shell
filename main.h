@@ -24,7 +24,7 @@ char *_strrev(char *str);
 char *_strcat(char *dest, char *src);
 int _strcmp(char *s1, char *s2);
 char *_strdup(char *str);
-int _strlen(char *string)
+int _strlen(char *string);
 char handlesignal(int l);
 int count_of_words(char *str);
 int checker(char **cmd, char *buf);
@@ -46,13 +46,24 @@ void handle_signal(int sn);
 char *testpath(char **token);
 char prompt_user(void);
 
+<<<<<<< HEAD
+/* Built-ins Functions */
+void free_buffers(char **buf);
+=======
 
+>>>>>>> b8f3e854e9cb4c360cfa770613a94006de614076
 /* Simple Shell Handlers */
 int main(int argcnt, char **argvtr, char *envvtr[]);
 void simple_exec(params *p);
 void fork_execute(char *cmd, params *p);
 
 /*STRUCTURES*/
+struct builtin
+{
+	char *env;
+	char *exit;
+} builtin;
+
 struct info
 {
 	int final_exit;
@@ -64,4 +75,19 @@ struct flags
 	bool interactive;
 } flags;
 
+<<<<<<< HEAD
+
+typedef struct params
+{
+	char **argv;
+	int *loop;
+	struct stat found;
+	char *buff;
+	char *cmd;
+	char *name;
+	int exit_value;
+} params ;
+
+=======
+>>>>>>> 53cb5a23cf918ebe33fb76374140391f18caeedc
 #endif /* MAIN_H */

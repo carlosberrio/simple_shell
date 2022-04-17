@@ -30,13 +30,13 @@ break;
 info.ln_count++;
 if (line[linesize - 1] == '\n')
 line[linesize - 1] = '\0';
-command = tokenizer(line);
+command = tokenizer(line,path);
 if (command == NULL || *command == NULL || **command == '\0')
 continue;
 if (checker(command, line))
 continue;
 path = find_path();
-paths = tokenizer(path);
+paths = tokenizer(path,line);
 pathcommand = test_path(paths, command[0]);
 if (!pathcommand)
 perror(argvtr[0]);
