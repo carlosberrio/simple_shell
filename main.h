@@ -13,7 +13,34 @@
 #include <unistd.h>
 #include <signal.h>
 #include <stdbool.h>
+#include <dirent.h>
 
+
+
+/**
+ * fork_execute - create child process and execute cmd
+ * @cmd: command or file to execute
+ * @p: struct with arguments
+ * struct params - object with all variables
+ * @argv: arguments from user
+ * @loop: num of times prompt has been showed
+ * @found: used to find files with stat()
+ * @buff: used with getline()
+ * @cmd: command = path + argv[0]
+ * @name: name of executable used in errors
+ * @exit_value: int used for return
+ */
+
+typedef struct params
+{
+	char **argv;
+	int *loop;
+	struct stat found;
+	char *buff;
+	char *cmd;
+	char *name;
+	int exit_value;
+} params;
 
 
 /* PROTOTYPES */
@@ -44,12 +71,9 @@ void handle_signal(int sn);
 char *testpath(char **token);
 char prompt_user(void);
 
-<<<<<<< HEAD
+
 /* Built-ins Functions */
 void free_buffers(char **buf);
-=======
-
->>>>>>> b8f3e854e9cb4c360cfa770613a94006de614076
 /* Simple Shell Handlers */
 int main(int argcnt, char **argvtr, char *envvtr[]);
 void simple_exec(params *p);
@@ -73,19 +97,5 @@ struct flags
 	bool interactive;
 } flags;
 
-<<<<<<< HEAD
 
-typedef struct params
-{
-	char **argv;
-	int *loop;
-	struct stat found;
-	char *buff;
-	char *cmd;
-	char *name;
-	int exit_value;
-} params ;
-
-=======
->>>>>>> 53cb5a23cf918ebe33fb76374140391f18caeedc
 #endif /* MAIN_H */
