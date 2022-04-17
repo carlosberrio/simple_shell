@@ -11,7 +11,7 @@
 int _putchar(char c)
 {
 return (write(1, &c, 1));
-
+}
 /**
 * _itoa - Function that converts any value from int to string
 * @i: Value entered type integer
