@@ -10,12 +10,12 @@
 
 char *testpath(char **token)
 {
-    
+
 int r = 0, k = 0;
 char *path = NULL, *path_new = NULL, **tokenized_path = NULL;
 for (r = 0; environ[r]; r++)
 {
-if (_strncmp(environ[r], "PATH", 4) != NULL)
+if (_strcmp(environ[r], "PATH", 4) != NULL)
 {
 path = _strdup(environ[r]);
 break;
