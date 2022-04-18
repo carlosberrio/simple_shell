@@ -16,6 +16,16 @@
 #include <dirent.h>
 #include <sys/cdefs.h>
 
+ struct params
+{
+	char **argv;
+	int *loop;
+	struct stat found;
+	char *buff;
+	char *cmd;
+	char *name;
+	int exit_value;
+} params;
 
 
 /* PROTOTYPES */
@@ -59,16 +69,8 @@ char *index_path(char *path, char *command);
 /*STRUCTURES*/
 
 
-typedef struct params
-{
-	char **argv;
-	int *loop;
-	struct stat found;
-	char *buff;
-	char *cmd;
-	char *name;
-	int exit_value;
-} params;
+
+
 struct builtin
 {
 	char *env;
