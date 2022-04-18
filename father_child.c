@@ -1,5 +1,10 @@
 #include <main.h>
 
+/**
+ * fork_execute - create child process and execute cmd
+ * @cmd: command or file to execute
+ * @p: struct with arguments
+ */
 
 void fork_execute(char *cmd, params *p)
 {

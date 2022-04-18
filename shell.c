@@ -37,7 +37,7 @@ if (checker(command, line))
 continue;
 path = find_path();
 paths = tokenizer(path,line);
-pathcommand = testpath(paths, command[0]);
+pathcommand = test_path(paths, command[0]);
 if (!pathcommand)
 perror(argvtr[0]);
 else
