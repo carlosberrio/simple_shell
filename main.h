@@ -35,7 +35,7 @@ char *_strcat(char *dest, char *src);
 int _strcmp(char *s1, char *s2);
 char *_strdup(char *str);
 int _strlen(char *string);
-char handlesignal(int l);
+char handlesignal(void);
 int count_of_words(char *str);
 int checker(char **cmd, char *buf);
 void print_env(void);

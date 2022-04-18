@@ -15,7 +15,4 @@ if (flags.interactive)
 {
 write(STDERR_FILENO, "$ ", 2);
 }
-if (flags.interactive){
-write(STDERR_FILENO, "$ ", 2);
-}
 }
