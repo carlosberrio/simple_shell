@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * prompt_user: 
- * 
- * @void: 
- * Return: 
+ * prompt_user: function calls promt
+ * @void: void
+ * Return: promt
  */
 
 char prompt_user(void)
