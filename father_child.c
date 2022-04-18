@@ -1,4 +1,4 @@
-#include <main.h>
+#include <main.h
 
 /**
  * fork_execute - create child process and execute cmd
