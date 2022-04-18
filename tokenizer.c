@@ -13,7 +13,7 @@ int i = 0, cow = 0;
 char **separated_words = NULL;
 cow = count_of_words(str);
 
-separated_words = malloc(sizeof(char *) * (cow + 1));
+separated_words = malloc(1024);
 if (separated_words == NULL)
 {
 perror("Error");
