@@ -6,10 +6,9 @@
  * Return: 
  */
 
-char handlesignal(void)
+void handle_signal(int m)
 {
-int l;
-write(STDERR_FILENO, "\n", 1);
-write(STDERR_FILENO, "$ ", 2);
-(void)l;
+	(void)m;
+	write(STDERR_FILENO, "\n", 1);
+	write(STDERR_FILENO, "$ ", 2);
 }
