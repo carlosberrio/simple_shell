@@ -16,7 +16,7 @@
 #include <dirent.h>
 #include <sys/cdefs.h>
 
- struct params
+typedef struct params
 {
 	char **argv;
 	int *loop;
@@ -48,6 +48,7 @@ void print_error(char *program_name, char *input, int error_num);
 int handle_builtin(char **command, char *line);
 
 /*-----Aux functions-----*/
+extern char **environ;
 
 
 /* String Handlers */
