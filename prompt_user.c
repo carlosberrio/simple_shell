@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * prompt_user: function calls promt
+ * promptuser: function calls promt
  * @void: void
  * Return: promt
  */

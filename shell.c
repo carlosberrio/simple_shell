@@ -23,7 +23,7 @@ while (1)
 free_buffers(command);
 free_buffers(paths);
 free(pathcommand);
-prompt_user();
+promptuser();
 linesize = getline(&line, &bufsize, stdin);
 if (linesize < 0)
 break;

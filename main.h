@@ -57,7 +57,7 @@ void handle_signal(int sn);
 
 /* Path & Search Handlers */
 char *test_path(char **path, char *command);
-char prompt_user(void);
+void promptuser(void);
 
 
 /* Built-ins Functions */

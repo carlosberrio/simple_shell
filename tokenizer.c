@@ -7,7 +7,7 @@
  * Return: separated words
  */
 
-char **tokenizer(char *str, char *worde)
+char **tokenizer(char *str, const char *worde)
 {
 int i = 0, cow = 0;
 char **separated_words = NULL;
