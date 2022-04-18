@@ -46,6 +46,7 @@ int _putchar(char c);
 char *_itoa(int i, char *strout, int base);
 void print_error(char *program_name, char *input, int error_num);
 int handle_builtin(char **command, char *line);
+char *find_path(void);
 
 /*-----Aux functions-----*/
 extern char **environ;
