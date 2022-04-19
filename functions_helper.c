@@ -70,3 +70,17 @@ return (i);
  * Return: space void or asigns memory space
  */
 void *_mycalloc(unsigned int num, unsigned int size)
+{
+	char *memory;
+	unsigned int index = 0;
+
+	if (num == 0 || size == 0)
+		return (NULL);
+	memory = malloc(num * size);
+	if (memory == NULL)
+		return (NULL);
+	for (; index < (num * size); index++)
+		*(memory + index) = 0;
+	return (memory);
+
+}
