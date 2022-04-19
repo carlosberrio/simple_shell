@@ -10,10 +10,15 @@
 char **tokenizer(char *str, char *worde)
 {
 int i = 0, cow = 0;
+(void) *worde;
 char **separated_words = NULL;
+
 cow = count_of_words(str);
 
 separated_words = malloc(1024);
+
+/**cow = count_of_words(str);*/
+separated_words = malloc(sizeof(char *) * (cow + 1));
 if (separated_words == NULL)
 {
 perror("Error");
@@ -26,9 +31,13 @@ free(separated_words[0]);
 free(separated_words);
 return (NULL);
 }
+else if (separated_words[0] != NULL)
+{
+    separated_words = strtok(NULL," ");
+}
 for (i = 1; i < cow; i++)
 {
-separated_words[i] = strtok_r(NULL,str, worde);
+separated_words[i] = strtok(NULL,str);
 }
 free(separated_words);
 return (separated_words);

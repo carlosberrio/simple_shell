@@ -89,6 +89,8 @@ return (buf);
              return (path);
             }
             env++;
+            free(path);
             }
+            free(env);
         return (NULL);
 }

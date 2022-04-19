@@ -34,6 +34,7 @@ continue;
 if (checker(command, line))
 continue;
 path = find_path();
+printf (">>%s \n", path);
 paths = tokenizer(path,line);
 pathcommand = test_path(paths, command[0]);
 if (!pathcommand)
