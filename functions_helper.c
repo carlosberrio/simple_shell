@@ -69,7 +69,7 @@ return (i);
  * @size: 
  * Return: space void or asigns memory space
  */
-void *_mycalloc(unsigned int num, unsigned int size)
+void *malloc(unsigned int num, unsigned int size)
 {
 	char *memory;
 	unsigned int index = 0;

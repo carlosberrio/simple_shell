@@ -70,7 +70,6 @@ int i;
 }
 
 
-
 /**
  * _strdup -  function that duplicates a string
  * in a newly allocated space in memory.
