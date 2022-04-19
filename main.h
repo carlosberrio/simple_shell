@@ -29,7 +29,7 @@ typedef struct params
 
 
 /* PROTOTYPES */
-char **tokenizer(char *str, const char *worde);
+char **tokenizer(char *str, char *worde);
 char *_strrev(char *str);
 char *_strcat(char *dest, char *src);
 int _strcmp(char *s1, char *s2);
@@ -47,6 +47,7 @@ char *_itoa(int i, char *strout, int base);
 void print_error(char *program_name, char *input, int error_num);
 int handle_builtin(char **command, char *line);
 char *find_path(void);
+void *_mycalloc(unsigned int num, unsigned int size);
 
 /*-----Aux functions-----*/
 extern char **environ;

@@ -29,13 +29,15 @@ return (str);
 
 /**
 * _strcat - function that concatenates two strings
-* @dest: string one where concatenated string is saved.
-* @src: string two that will be copied in dest.
+* @dest: string one, where concatenated string is saved.
+* @src: string two, that will be copied in dest.
 * Return: concatenated string.
 */
 
 char *_strcat(char *dest, char *src)
 {
+dest = myalloc(1024*sizeof(char) * (_strlen(dest)));
+src = myalloc(1024*sizeof(char) * (_strlen(dest)));
 int i = 0, n = 0;
 
 i = _strlen(dest);
@@ -94,7 +96,7 @@ return (NULL);
 
 i = _strlen(str);
 
-new_s = malloc(sizeof(char) * (i + 1));
+new_s = myalloc(sizeof(char) * (i + 1));
 
 if (new_s == NULL)
 {

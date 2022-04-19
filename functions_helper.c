@@ -61,3 +61,12 @@ i++;
 
 return (i);
 }
+
+
+/**
+ * mycalloc - creates a space to an array
+ * @num:
+ * @size: 
+ * Return: space void or asigns memory space
+ */
+void *_mycalloc(unsigned int num, unsigned int size)

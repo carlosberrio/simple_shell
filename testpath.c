@@ -43,7 +43,7 @@ command = "";
 if (path == 0)
 path = "";
 
-buf = malloc(sizeof(char) * (_strlen(path) + _strlen(command) + 2));
+buf = myalloc(1024*sizeof(char) * (_strlen(path) + _strlen(command) + 2));
 if (!buf)
 return (NULL);
 
@@ -76,7 +76,7 @@ char *find_path(void)
 int x;
 char **env = environ, *path = NULL;
 
-while (*env)
+while (**env)
 {
 if (_strcmp(*env, "PATH=") == 0)
 {
