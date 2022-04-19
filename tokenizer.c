@@ -14,8 +14,8 @@ int i = 0, cow = 0;
 (void) *worde;
 char **separated_words = NULL;
 cow = count_of_words(str);
-separated_words = _mycalloc(cow, 1024 * sizeof(char *) * (cow + 1));
-separated_words = _mycalloc(cow,1024);
+separated_words = malloc(1024 * sizeof(char *) * (cow + 1));
+/**separated_words = malloc(cow,1024);*/
 cow = count_of_words(str);
 printf("%s \n", str);
 separated_words = malloc(sizeof(char *) * (cow + 1));
