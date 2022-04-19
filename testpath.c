@@ -106,6 +106,6 @@ return (NULL);
             env++;
             free(path);
             }
-            free(env);
         return (NULL);
+        free(env);
 }
