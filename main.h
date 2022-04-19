@@ -71,9 +71,6 @@ char *index_path(char *path, char *command);
 
 /*STRUCTURES*/
 
-
-
-
 struct builtin
 {
 	char *env;
@@ -90,6 +87,5 @@ struct flags
 {
 	bool interactive;
 } flags;
-
 
 #endif /* MAIN_H */
