@@ -28,7 +28,7 @@ return (NULL);
 }
 for (i = 1; i < cow; i++)
 {
-separated_words[i] = strtok(NULL, worde);
+separated_words[i] = strtok_r(NULL,str, worde);
 }
 free(separated_words);
 return (separated_words);

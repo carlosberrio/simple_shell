@@ -29,7 +29,7 @@ typedef struct params
 
 
 /* PROTOTYPES */
-char **tokenizer(char *str, const char *worde);
+char **tokenizer(char *str, char *worde);
 char *_strrev(char *str);
 char *_strcat(char *dest, char *src);
 int _strcmp(char *s1, char *s2);
