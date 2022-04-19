@@ -1,4 +1,6 @@
 # Simple Shell
+![plot](Descargas/Ken Thompson.jpeg)
+Kenneth Lane Thompson, creator of The First Shell, (born February 4, 1943) is an American pioneer of computer science. Thompson worked at Bell Labs for most of his career where he designed and implemented the original Unix operating system.
 ## What is a **shell**?
 It is a program that takes keyboard commands through the terminal and gives them to the operating system to execute.
 
@@ -16,6 +18,32 @@ This project is a simple version of the linux shell made for Holberton School.
 No more than 5 functions per file
 * All your header files should be include guarded
 Use system calls only when you need to (why?)
+
+## Compilation:
+The shell will be compiled this way:
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+
+## Testing:
+The shell should work like this in interactive mode:
+$ ./hsh
+($) /bin/ls
+hsh main.c shell.c
+($)
+($) exit
+$
+
+But also in non-interactive mode:
+$ echo "/bin/ls" | ./hsh
+hsh main.c shell.c test_ls_2
+$
+$ cat test_ls_2
+/bin/ls
+/bin/ls
+$
+$ cat test_ls_2 | ./hsh
+hsh main.c shell.c test_ls_2
+hsh main.c shell.c test_ls_2
+$
 
 ## List of allowed functions and system calls:
 * access (man 2 access)

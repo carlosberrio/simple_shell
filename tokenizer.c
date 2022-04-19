@@ -10,9 +10,9 @@
 char **tokenizer(char *str, const char *worde)
 {
 int i = 0, cow = 0;
+(void) *worde;
 char **separated_words = NULL;
-cow = count_of_words(str);
-
+/**cow = count_of_words(str);*/
 separated_words = malloc(sizeof(char *) * (cow + 1));
 if (separated_words == NULL)
 {
