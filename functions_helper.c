@@ -69,6 +69,7 @@ return (i);
  * @size: 
  * Return: space void or asigns memory space
  */
+/**
 void *malloc(unsigned int num, unsigned int size)
 {
 	char *memory;
@@ -84,3 +85,4 @@ void *malloc(unsigned int num, unsigned int size)
 		return (memory);
 		free (memory);
 }
+*/

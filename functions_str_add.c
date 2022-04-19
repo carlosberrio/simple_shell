@@ -36,8 +36,8 @@ return (str);
 
 char *_strcat(char *dest, char *src)
 {
-dest = malloc(1024*sizeof(char) * (_strlen(dest)),5);
-src = malloc(1024*sizeof(char) * (_strlen(src)),4);
+dest = malloc(1024*sizeof(char) * (_strlen(dest)));
+src = malloc(1024*sizeof(char) * (_strlen(src)));
 int i = 0, n = 0;
 
 i = _strlen(dest);
