@@ -1,5 +1,5 @@
 # Simple Shell
-![plot](Descargas/Ken Thompson.jpeg)
+![plot](https://photos.app.goo.gl/KHAvBSjdhHLNediPA)
 Kenneth Lane Thompson, creator of The First Shell, (born February 4, 1943) is an American pioneer of computer science. Thompson worked at Bell Labs for most of his career where he designed and implemented the original Unix operating system.
 ## What is a **shell**?
 It is a program that takes keyboard commands through the terminal and gives them to the operating system to execute.
