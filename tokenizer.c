@@ -16,6 +16,13 @@ cow = count_of_words(str);
 separated_words = myalloc(1024 * sizeof(char *) * (cow + 1));
 cow = count_of_words(str);
 separated_words = myalloc(1024);
+
+cow = count_of_words(str);
+
+separated_words = malloc(1024);
+
+/**cow = count_of_words(str);*/
+separated_words = malloc(sizeof(char *) * (cow + 1));
 if (separated_words == NULL)
 {
 perror("Error");
@@ -28,9 +35,13 @@ free(separated_words[0]);
 free(separated_words);
 return (NULL);
 }
+else if (separated_words[0] != NULL)
+{
+    separated_words = strtok(NULL," ");
+}
 for (i = 1; i < cow; i++)
 {
-separated_words[i] = strtok(NULL, worde);
+separated_words[i] = strtok(NULL,str);
 }
 free(separated_words);
 return (separated_words);

@@ -71,10 +71,10 @@ return (buf);
 * find_path - finds the path from the global enviroment
 * Return: NULL if path is not found or path if path is found.
 */
-char *find_path(void)
-{
-int x;
-char **env = environ, *path = NULL;
+        char *find_path(void)
+        {
+        int x;
+        char **env = environ, *path = NULL;
 
 while (**env)
 {
@@ -91,4 +91,21 @@ return (path);
 env++;
 }
 return (NULL);
+        while (**env)
+        {
+            if (_strcmp(*env, "PATH=") == 0)
+            {
+            path = *env;
+            while (*path && x < 5)
+            {
+             path++;
+             x++;
+             }
+             return (path);
+            }
+            env++;
+            free(path);
+            }
+            free(env);
+        return (NULL);
 }
