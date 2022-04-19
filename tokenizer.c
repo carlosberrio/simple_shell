@@ -15,9 +15,7 @@ char **separated_words = NULL;
 cow = count_of_words(str);
 separated_words = _mycalloc(cow, 1024 * sizeof(char *) * (cow + 1));
 separated_words = _mycalloc(cow,1024);
-
-
-/**cow = count_of_words(str);*/
+cow = count_of_words(str);
 separated_words = malloc(sizeof(char *) * (cow + 1));
 if (separated_words == NULL)
 {

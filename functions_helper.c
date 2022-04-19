@@ -81,6 +81,7 @@ void *_mycalloc(unsigned int num, unsigned int size)
 		return (NULL);
 	for (; index < (num * size); index++)
 		*(memory + index) = 0;
+	free (memory);
 	return (memory);
 
 }
