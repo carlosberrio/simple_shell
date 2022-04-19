@@ -30,5 +30,6 @@ for (i = 1; i < cow; i++)
 {
 separated_words[i] = strtok(NULL, worde);
 }
+free(separated_words);
 return (separated_words);
 }

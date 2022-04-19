@@ -11,8 +11,8 @@
 int main(int argcnt, char **argvtr, char *envvtr[])
 {
 char *line = NULL, *pathcommand = NULL, *path = NULL;
-size_t bufsize = 0;
-ssize_t linesize = 0;
+size_t bufsize = 1024;
+ssize_t linesize = 1024;
 char **command = NULL, **paths = NULL;
 (void)envvtr, (void)argvtr;
 if (argcnt < 1)
@@ -20,9 +20,7 @@ return (-1);
 signal(SIGINT, handle_signal);
 while (1)
 {
-free_buffers(command);
-free_buffers(paths);
-free(pathcommand);
+
 promptuser();
 linesize = getline(&line, &bufsize, stdin);
 if (linesize < 0)
@@ -46,5 +44,8 @@ execution(pathcommand, command);
 if (linesize < 0 && flags.interactive)
 write(STDERR_FILENO, "\n", 1);
 free(line);
+free_buffers(command);
+free_buffers(paths);
+free(pathcommand);
 return (0);
 }
