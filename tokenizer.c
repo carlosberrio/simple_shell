@@ -31,13 +31,9 @@ free(separated_words[0]);
 free(separated_words);
 return (NULL);
 }
-else if (separated_words[0] != NULL)
-{
-    separated_words = strtok(NULL," ");
-}
 for (i = 1; i < cow; i++)
 {
-separated_words[i] = strtok(NULL,str);
+separated_words[i] = strtok(NULL, str);
 }
 free(separated_words);
 return (separated_words);
