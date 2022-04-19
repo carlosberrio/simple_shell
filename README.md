@@ -21,29 +21,29 @@ Use system calls only when you need to (why?)
 
 ## Compilation:
 The shell will be compiled this way:
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+* gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 
 ## Testing:
 The shell should work like this in interactive mode:
-$ ./hsh
-($) /bin/ls
-hsh main.c shell.c
-($)
-($) exit
-$
+* $ ./hsh
+* ($) /bin/ls
+* hsh main.c shell.c
+* ($)
+* ($) exit
+* $
 
 But also in non-interactive mode:
-$ echo "/bin/ls" | ./hsh
-hsh main.c shell.c test_ls_2
-$
-$ cat test_ls_2
-/bin/ls
-/bin/ls
-$
-$ cat test_ls_2 | ./hsh
-hsh main.c shell.c test_ls_2
-hsh main.c shell.c test_ls_2
-$
+* $ echo "/bin/ls" | ./hsh
+* hsh main.c shell.c test_ls_2
+* $
+* $ cat test_ls_2
+* /bin/ls
+* /bin/ls
+* $
+* $ cat test_ls_2 | ./hsh
+* hsh main.c shell.c test_ls_2
+* hsh main.c shell.c test_ls_2
+* $
 
 ## List of allowed functions and system calls:
 * access (man 2 access)
