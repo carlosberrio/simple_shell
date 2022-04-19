@@ -43,7 +43,7 @@ command = "";
 if (path == 0)
 path = "";
 
-buf = myalloc(1024*sizeof(char) * (_strlen(path) + _strlen(command) + 2));
+buf = malloc(1024*sizeof(char) * (_strlen(path) + _strlen(command) + 2));
 if (!buf)
 return (NULL);
 
@@ -78,7 +78,7 @@ return (buf);
 
 while (**env)
 {
-if (_strcmp(*env, "PATH=") == 0)
+if (_strcmp(*env, "PATH=", 5) == 0)
 {
 path = *env;
 while (*path && x < 5)
@@ -93,7 +93,7 @@ env++;
 return (NULL);
         while (**env)
         {
-            if (_strcmp(*env, "PATH=") == 0)
+            if (_strcmp(*env, "PATH=", 5) == 0)
             {
             path = *env;
             while (*path && x < 5)
