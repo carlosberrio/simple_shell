@@ -36,8 +36,8 @@ return (str);
 
 char *_strcat(char *dest, char *src)
 {
-dest = myalloc(1024*sizeof(char) * (_strlen(dest)));
-src = myalloc(1024*sizeof(char) * (_strlen(dest)));
+dest = _mycalloc(1024*sizeof(char) * (_strlen(dest)),5);
+src = _mycalloc(1024*sizeof(char) * (_strlen(src)),4);
 int i = 0, n = 0;
 
 i = _strlen(dest);
@@ -57,27 +57,19 @@ return (dest);
 * Return: 0 if strings are equal, 1 if strings are different.
 */
 
-int _strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2, int n)
 {
-int k = 0, equal = 0, dif = 0, len1 = _strlen(s1), len2 = _strlen(s2);
+int i;
 
-for (k = 0; s1[k] != '\0' && s2[k] != '\0'; k++)
-{
-if (s1[k] == s2[k])
-{
-equal++;
-}
-if (s1[k] != s2[k])
-{
-dif++;
-}
+	for (i = 0; s1[i] && s2[i] && i < n; i++)
+	{
+		if (s1[i] != s2[i])
+			return (s1[i] - s2[i]);
+	}
+	return (0);
 }
 
-if (dif > 0 || len1 != len2)
-return (1);
 
-return (0);
-}
 
 /**
  * _strdup -  function that duplicates a string
@@ -96,7 +88,7 @@ return (NULL);
 
 i = _strlen(str);
 
-new_s = myalloc(sizeof(char) * (i + 1));
+new_s = malloc(sizeof(char) * (i + 1));
 
 if (new_s == NULL)
 {
