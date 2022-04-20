@@ -10,8 +10,6 @@
 char **tokenizer(char *str, char *worde)
 {
 int i = 0, cow = 0;
-(void) *str; 
-(void) *worde;
 char **separated_words = NULL;
 cow = count_of_words(str);
 separated_words = malloc(1024 * sizeof(char *) * (cow + 1));

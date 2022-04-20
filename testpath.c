@@ -18,10 +18,11 @@ while (path[i])
 output = index_path(path[i], command);
 if (access(output, F_OK | X_OK) == 0)
 return (output);
-free(output);
 i++;
 }
 return (NULL);
+free(output);
+
 }
 
 /**
@@ -43,7 +44,7 @@ command = "";
 if (path == 0)
 path = "";
 
-buf = malloc(1024*sizeof(char) * (_strlen(path) + _strlen(command) + 2));
+buf = malloc(sizeof(char) * (_strlen(path) + _strlen(command) + 2));
 if (!buf)
 return (NULL);
 
