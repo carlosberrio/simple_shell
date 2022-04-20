@@ -22,4 +22,6 @@ exit_cmd();
 return (2);
 }
 return (0);
+free (line);
+/**nueva línea para parámetro no usado */
 }
