@@ -7,10 +7,9 @@
 *
 * Return: no return
 */
-void exit_cmd(char **command, char *line)
+void exit_cmd(void)
 {
     /**free_buffers(command);
 free(line);*/
-free_buffers("");
 exit(0);
 }
