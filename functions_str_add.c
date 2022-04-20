@@ -57,15 +57,13 @@ return (dest);
 * Return: 0 if strings are equal, 1 if strings are different.
 */
 
-int _strcmp(char *s1, char *s2, int n)
+int _strcmp(char *s1, char *s2)
 {
-int i;
+	int i;
 
-	for (i = 0; s1[i] && s2[i] && i < n; i++)
-	{
+	for (i = 0; s1[i] != '\0'; i++)
 		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
-	}
+			return (-1);
 	return (0);
 }
 

@@ -11,12 +11,12 @@ int handle_builtin(char **command, char *line)
 {
 struct builtin builtin = {"env", "exit"} ;
 
-if (_strcmp(*command, builtin.env, 4) == 0)
+if (_strcmp(*command, builtin.env) == 0)
 {
 print_env();
 return (1);
 }
-else if (_strcmp(*command, builtin.exit, 5 ) == 0)
+else if (_strcmp(*command, builtin.exit) == 0)
 {
 exit_cmd();
 return (1);

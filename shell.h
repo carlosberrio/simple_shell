@@ -31,7 +31,7 @@ typedef struct params
 char **tokenizer(char *str, char *worde);
 char *_strrev(char *str);
 char *_strcat(char *dest, char *src);
-int _strcmp(char *s1, char *s2, int n);
+int _strcmp(char *s1, char *s2);
 char *_strdup(char *str);
 int _strlen(char *string);
 void handle_signal(int m);

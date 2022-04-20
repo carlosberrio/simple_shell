@@ -79,7 +79,7 @@ return (buf);
 
 while (**env)
 {
-if (_strcmp(*env, "PATH=", 5) == 0)
+if (_strcmp(*env, "PATH=") == 0)
 {
 path = *env;
 while (*path && x < 5)
@@ -94,7 +94,7 @@ env++;
 return (NULL);
         while (**env)
         {
-            if (_strcmp(*env, "PATH=", 5) == 0)
+            if (_strcmp(*env, "PATH=") == 0)
             {
             path = *env;
             while (*path && x < 5)
