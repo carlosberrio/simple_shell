@@ -27,7 +27,8 @@ break;
 info.ln_count++;
 if (line[linesize - 1] == '\n')
 line[linesize - 1] = '\0';
-command = tokenizer(line,linesize);
+
+command = tokenizer(line," \n\t");
 
 if (command == NULL || *command == NULL || **command == '\0')
 continue;
@@ -35,7 +36,7 @@ if (checker(command, line))
 continue;
 path = find_path();
 printf (">>%s \n", path);
-paths = tokenizer(path,line);
+paths = tokenizer(path," \n\t");
 pathcommand = test_path(paths, command[0]);
 if (!pathcommand)
 perror(argvtr[0]);

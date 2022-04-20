@@ -7,13 +7,13 @@
 #include <unistd.h>
 #include <string.h>
 #include <sys/stat.h>
-/**#include <sys/wait.h>
+#include <sys/wait.h>
 #include <errno.h>
 #include <stddef.h>
 #include <signal.h>
 #include <stdbool.h>
 #include <dirent.h>
-#include <sys/cdefs.h>*/
+#include <sys/cdefs.h>
 
 typedef struct params
 {
