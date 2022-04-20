@@ -32,6 +32,10 @@ free(separated_words[0]);
 free(separated_words);
 return (NULL);
 }
+for (i = 1; i < cow; i++)
+{
+separated_words[i] = strtok(NULL, str);
+=======
 else if (separated_words[0] != NULL)
 {
     separated_words = strtok(NULL," ");
