@@ -27,7 +27,7 @@ break;
 info.ln_count++;
 if (line[linesize - 1] == '\n')
 line[linesize - 1] = '\0';
-command = tokenizer(line,path);
+command = tokenizer(line,);
 if (command == NULL || *command == NULL || **command == '\0')
 continue;
 if (checker(command, line))
