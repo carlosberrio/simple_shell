@@ -20,7 +20,6 @@ return (-1);
 signal(SIGINT, handle_signal);
 while (1)
 {
-
 promptuser();
 linesize = getline(&line, &bufsize, stdin);
 if (linesize < 0)
