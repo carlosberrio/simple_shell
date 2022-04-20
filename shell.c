@@ -44,9 +44,10 @@ execution(pathcommand, command);
 }
 if (linesize < 0 && flags.interactive)
 write(STDERR_FILENO, "\n", 1);
+
+return (0);
 free(line);
 free_buffers(command);
 free_buffers(paths);
 free(pathcommand);
-return (0);
 }

@@ -32,7 +32,6 @@ free(separated_words[0]);
 free(separated_words);
 return (NULL);
 }
-<<<<<<< HEAD
 for (i = 1; i < cow; i++)
 {
 separated_words[i] = strtok(NULL, str);
@@ -45,7 +44,6 @@ else if (separated_words[0] != NULL)
 for (i = 1; i < cow; i++)
 {
 separated_words[i] = strtok(NULL, worde);
->>>>>>> fef6715f4a3e47485c6d40fd3013ed71b8e8b355
 }
 return (separated_words);
 free(separated_words);
