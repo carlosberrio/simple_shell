@@ -11,8 +11,8 @@
 int main(int argcnt, char **argvtr, char *envvtr[])
 {
 char *line = NULL, *pathcommand = NULL, *path = NULL;
-size_t bufsize = 1024;
-ssize_t linesize = 1024;
+size_t bufsize = NULL;
+ssize_t linesize = NULL;
 char **command = NULL, **paths = NULL;
 (void)envvtr, (void)argvtr;
 if (argcnt < 1)
