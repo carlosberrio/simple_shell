@@ -10,7 +10,6 @@
 #include <sys/stat.h>
 #include <errno.h>
 #include <stddef.h>
-#include <unistd.h>
 #include <signal.h>
 #include <stdbool.h>
 #include <dirent.h>
@@ -48,11 +47,8 @@ char *_itoa(int i, char *strout, int base);
 void print_error(char *program_name, char *input, int error_num);
 int handle_builtin(char **command, char *line);
 char *find_path(void);
-<<<<<<< HEAD
 /**void *_mycalloc(unsigned int num, unsigned int size);**/
-=======
 /**void *malloc(unsigned int num, unsigned int size);*/
->>>>>>> fef6715f4a3e47485c6d40fd3013ed71b8e8b355
 
 /*-----Aux functions-----*/
 extern char **environ;
