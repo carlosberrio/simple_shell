@@ -6,14 +6,14 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
-#include <sys/wait.h>
-#include <sys/stat.h>
 #include <errno.h>
-#include <stddef.h>
+/**#include <stddef.h>
 #include <signal.h>
 #include <stdbool.h>
 #include <dirent.h>
 #include <sys/cdefs.h>
+#include <sys/wait.h>*/
+#include <sys/stat.h>
 
 typedef struct params
 {
