@@ -18,11 +18,11 @@ perror(cmds);
 if (child_pid == 0)
 {
 execve(cmds, cmdv, env);
-perror(cmds);
-free(cmds);
-free_buffers(cmdv);
-exit(98);
 }
 else
+{
 wait(&status);
+free(cmdv);
+free(cmds);
+}
 }

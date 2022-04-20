@@ -40,7 +40,7 @@ int checker(char **cmd, char *buf);
 void print_env(void);
 void free_buffers(char **buf);
 /** void exit_cmd(char **command, char *line); **/
-void exit_cmd(void);
+int exit_cmd(void);
 void execution(char *cmds, char **cmdv);
 int _putchar(char c);
 char *_itoa(int i, char *strout, int base);

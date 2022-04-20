@@ -7,12 +7,16 @@
 */
 int checker(char **cmd, char *buf)
 {
-if (handle_builtin(cmd, buf))
-return (1);
-else if (**cmd == '/')
+if (handle_builtin(cmd, buf) == 1)
 {
-execution(cmd[0], cmd);
-return (1);
+    free (cmd);
+    return (1);
+}
+else if (handle_builtin(cmd, buf) == 2)
+{
+free (cmd);
+free (buf);
+exit (0);
 }
 return (0);
 }

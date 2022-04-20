@@ -18,11 +18,10 @@ while (path[i])
 output = index_path(path[i], command);
 if (access(output, F_OK | X_OK) == 0)
 return (output);
+free(output);
 i++;
 }
 return (NULL);
-free(output);
-
 }
 
 /**
@@ -35,13 +34,13 @@ free(output);
 */
 char *index_path(char *path, char *command)
 {
-char *buf;
+char *buf = NULL;
 size_t i = 0, j = 0;
 
-if (command == 0)
+if (command == NULL)
 command = "";
 
-if (path == 0)
+if (path == NULL)
 path = "";
 
 buf = malloc(sizeof(char) * (_strlen(path) + _strlen(command) + 2));
@@ -74,39 +73,19 @@ return (buf);
 */
         char *find_path(void)
         {
-        int x;
+        int x = 0;
         char **env = environ, *path = NULL;
 
-while (**env)
+while (env[x])
 {
-if (_strcmp(*env, "PATH=") == 0)
+if (strncmp(env[x], "PATH", 4) == 0)
 {
-path = *env;
-while (*path && x < 5)
-{
-path++;
+path = strdup(env[x]);
+break;
+}
 x++;
 }
-return (path);
-}
-env++;
-}
+if (!path)
 return (NULL);
-        while (**env)
-        {
-            if (_strcmp(*env, "PATH=") == 0)
-            {
-            path = *env;
-            while (*path && x < 5)
-            {
-             path++;
-             x++;
-             }
-             return (path);
-            }
-            env++;
-            free(path);
-            }
-        return (NULL);
-        free(env);
-}
+return (path);
+        }

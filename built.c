@@ -19,7 +19,7 @@ return (1);
 else if (_strcmp(*command, builtin.exit) == 0)
 {
 exit_cmd();
-return (1);
+return (2);
 }
 return (0);
 }
