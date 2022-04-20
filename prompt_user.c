@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 /**
  * promptuser: function calls promt

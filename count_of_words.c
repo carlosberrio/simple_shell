@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 #define SALIDA 0
 #define ENTRADA 1
 

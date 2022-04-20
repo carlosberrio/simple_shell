@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 /**
 *main - read and execute the command that typed- infinite loop
