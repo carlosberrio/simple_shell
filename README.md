@@ -1,5 +1,5 @@
 # Simple Shell
-![plot](Descargas/Ken Thompson.jpeg)
+![link](https://i.imgur.com/6kSqXN8.jpg)
 Kenneth Lane Thompson, creator of The First Shell, (born February 4, 1943) is an American pioneer of computer science. Thompson worked at Bell Labs for most of his career where he designed and implemented the original Unix operating system.
 ## What is a **shell**?
 It is a program that takes keyboard commands through the terminal and gives them to the operating system to execute.
@@ -21,29 +21,29 @@ Use system calls only when you need to (why?)
 
 ## Compilation:
 The shell will be compiled this way:
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+* gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 
 ## Testing:
 The shell should work like this in interactive mode:
-$ ./hsh
-($) /bin/ls
-hsh main.c shell.c
-($)
-($) exit
-$
+* $ ./hsh
+* ($) /bin/ls
+* hsh main.c shell.c
+* ($)
+* ($) exit
+* $
 
 But also in non-interactive mode:
-$ echo "/bin/ls" | ./hsh
-hsh main.c shell.c test_ls_2
-$
-$ cat test_ls_2
-/bin/ls
-/bin/ls
-$
-$ cat test_ls_2 | ./hsh
-hsh main.c shell.c test_ls_2
-hsh main.c shell.c test_ls_2
-$
+* $ echo "/bin/ls" | ./hsh
+* hsh main.c shell.c test_ls_2
+* $
+* $ cat test_ls_2
+* /bin/ls
+* /bin/ls
+* $
+* $ cat test_ls_2 | ./hsh
+* hsh main.c shell.c test_ls_2
+* hsh main.c shell.c test_ls_2
+* $
 
 ## List of allowed functions and system calls:
 * access (man 2 access)
@@ -79,9 +79,9 @@ $
 * write (man 2 write)
 
 ## Authors
-<img src = https://cdn-icons-png.flaticon.com/512/25/25231.png width = "30xp" align= 'center'/> [Alejandro Caballero](https://github.com/Caballero18) |[ Carlos Berrio](https://github.com/carlosberrio) | [José Petro](https://github.com/Giu13sse)
+<img src = https://cdn-icons-png.flaticon.com/512/25/25231.png width = "30xp" align= 'center'/> [ Carlos Berrio](https://github.com/carlosberrio) | [José Petro](https://github.com/Giu13sse)
 
-<img src = https://cdn-icons-png.flaticon.com/512/60/60580.png width = "30xp" align= 'center'/> [Alejandro Caballero](https://twitter.com/Alejand51178128) | [Carlos Berrio](https://twitter.com/CarlosBerro6) | [José Petro](https://twitter.com/Rex_Giusse)
+<img src = https://cdn-icons-png.flaticon.com/512/60/60580.png width = "30xp" align= 'center'/> [Carlos Berrio](https://twitter.com/CarlosBerro6) | [José Petro](https://twitter.com/Rex_Giusse)
 
 Holberton School - Foundations - Low-level programming & Algorithm  Linux and Unix system programming.
 April, 2022. Medellín, Colombia.
