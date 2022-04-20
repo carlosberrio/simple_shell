@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 /**
  * testpath - function that test the PATH in user environment,
