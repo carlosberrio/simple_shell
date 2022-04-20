@@ -1,4 +1,3 @@
-<<<<<<< HEAD:main.h
 #ifndef MAIN_H
 #define MAIN_H
 
@@ -91,8 +90,7 @@ struct flags
 } flags;
 
 #endif /* MAIN_H */
-=======
-<<<<<<< HEAD:shell.h
+
 #ifndef MAIN_H
 #define MAIN_H
 
