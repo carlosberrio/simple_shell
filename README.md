@@ -27,7 +27,7 @@ Use system calls only when you need to (why?)
 | man_1_simple_shell | Manual of simple_shell. |
 | shell.h | Main file program. |
 | shell.c | Main function, ..... |
-| tokenizer.c |  |
+| tokenizer.c | |
 | warnings.c |  |
 | testhpath.c |  |
 | README.md | short explanation about project |
@@ -116,6 +116,9 @@ But also in non-interactive mode:
 * wait3 (man 2 wait3)
 * wait4 (man 2 wait4)
 * write (man 2 write)
+
+## BLOG - What happens when you type `ls -l *.c` in the shell
+[BLOG](https://medium.com/@4634/9af1e0f08220)
 
 ## Authors
 <img src = https://cdn-icons-png.flaticon.com/512/25/25231.png width = "30xp" align= 'center'/> [ Carlos Berrio](https://github.com/carlosberrio) | [José Petro](https://github.com/Giu13sse)
