@@ -22,4 +22,7 @@ exit_cmd();
 return (2);
 }
 return (0);
+free (line);
+free_buffers (command);
+/**nueva línea para parámetro no usado */
 }

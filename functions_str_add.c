@@ -36,11 +36,10 @@ return (str);
 
 char *_strcat(char *dest, char *src)
 {
+int n = 0;
+int i = _strlen(dest);
 dest = malloc(sizeof(char) * (_strlen(dest)));
 src = malloc(sizeof(char) * (_strlen(src)));
-int i = 0, n = 0;
-
-i = _strlen(dest);
 
 for (n = 0; src[n] != '\0'; n++)
 {
