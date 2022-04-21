@@ -12,11 +12,11 @@ this is the Simple Shell project from Holberton School. This program is a simple
 Has a few simple commands to run.
 
 .SH AVAILABILITY
-Simple_shell is available from the following HTTP
+simple_shell is available from the following HTTP
 \fBhttps://github.com/carlosberrio/simple_shell.git\fP
 
 .SH COMPATILIBITY
-Simple_shell tries to emulate sh when invoked as sh, to run it you must clone the repository, compile and run the compiled file as follows:
+simple_shell tries to emulate sh when invoked as sh, to run it you must clone the repository, compile and run the compiled file as follows:
 .PP
 \fBgcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh ; ./hsh\fP
 
