@@ -1,32 +1,77 @@
 .TH simple_shell "April - 2022" "Holberton School" "simple_shell man page"
 .\" Contact AUTHORS to correct errors or comments.
-.hy 
-.PP
-\&.\[dq] Manpage for Simple_Shell(3).
-\&.TH man 3 \[lq]22 april 2022\[rq] \[lq]1.0\[rq] \[dq]Simple_shell(3) man
-page\[dq] .SH NAME Simple_Shell(3) \- formatted output conversion .SH
+
 .SH NAME
-Orden de la función Descripción de la orden/función/programa
-Breve descripción de la función, orden o programa.
+hsh simple shell. Project done by Carlos Berrio & José Petro.
+
 .SH SYNOPSIS
-.B Nombre de la orden
-Opciones de la función (orden o programa) (caso de función)
+hsh does not support arguments
+
 .SH DESCRIPTION
-Descripción detallada de las ordenes y sus opciones.
-en el caso de una función se deben describir los parámetros de la interfaz
-Los parámetros se introducen con la opción .PP
+this is the Simple Shell project from Holberton School. This program is a simple shell that can be compiled and launched from the command line within any number of Linux versions.
+Has a few simple commands to run.
+
+.SH AVAILABILITY
+Simple_shell is available from the following HTTP
+\fBhttps://github.com/carlosberrio/simple_shell.git\fP
+
+.SH COMPATILIBITY
+Simple_shell tries to emulate sh when invoked as sh, to run it you must clone the repository, compile and run the compiled file as follows:
 .PP
-Este es un párrafo nuevo.
-Las nuevas líneas se introducen con .br
+\fBgcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh ; ./hsh\fP
+
+.SH EXAMPLES
+.PP
+1. List files in alphabetical order:
+.PP
+$ ls
 .br
-Esta es una nueva línea
-.SH FILES
-Los ficheros que necesita la orden/función Por ejemplo la orden passwd(1)
-utiliza el fichero /etc/passwd.
-.SH SEE ALSO
-Referencia a documentos afines, incluyendo otras páginas del manual.
+$ ls -l
+.br
+total 76
+-rwxrwxrwx 1 carlosberrio carlosberrio   315 Apr 20 17:33 AUTHORS
+-rwxrwxrwx 1 carlosberrio carlosberrio  4234 Apr 21 12:34 README.md
+-rwxrwxrwx 1 carlosberrio carlosberrio   544 Apr 20 18:00 built.c
+-rwxrwxrwx 1 carlosberrio carlosberrio   414 Apr 20 17:33 checker.c
+-rwxrwxrwx 1 carlosberrio carlosberrio   498 Apr 20 17:33 count_of_words.c
+-rwxrwxrwx 1 carlosberrio carlosberrio   289 Apr 20 17:33 env.c
+-rwxrwxrwx 1 carlosberrio carlosberrio   424 Apr 20 17:33 execution.c
+-rwxrwxrwx 1 carlosberrio carlosberrio   132 Apr 21 12:18 exit.c
+-rwxrwxrwx 1 carlosberrio carlosberrio   261 Apr 20 17:33 free_buffers.c
+-rwxrwxrwx 1 carlosberrio carlosberrio  1010 Apr 21 12:18 functions_helper.c
+-rwxrwxrwx 1 carlosberrio carlosberrio  1701 Apr 20 17:47 functions_str_add.c
+-rwxrwxrwx 1 carlosberrio carlosberrio   138 Apr 20 17:33 handle_signal.c
+-rwxrwxrwx 1 carlosberrio carlosberrio 22880 Apr 21 14:28 hsh
+-rwxrwxrwx 1 carlosberrio carlosberrio  1258 Apr 21 16:31 man_1_simple_shell
+-rwxrwxrwx 1 carlosberrio carlosberrio   286 Apr 20 17:33 prompt_user.c
+-rwxrwxrwx 1 carlosberrio carlosberrio  1243 Apr 20 17:33 shell.c
+-rwxrwxrwx 1 carlosberrio carlosberrio  1914 Apr 21 12:18 shell.h
+-rwxrwxrwx 1 carlosberrio carlosberrio  1666 Apr 21 12:18 testpath.c
+-rwxrwxrwx 1 carlosberrio carlosberrio   675 Apr 21 12:18 tokenizer.c
+-rwxrwxrwx 1 carlosberrio carlosberrio 11111 Apr 20 17:33 valgrind-out.txt
+-rwxrwxrwx 1 carlosberrio carlosberrio   863 Apr 21 12:18 warnings.c
+$
+
+.SS --------------
+
+2. print the current working directory and set a new line that waits for the next command:
+.PP
+$ ./hsh
+.br
+$ pwd
+/home/vagrant/simple_shell
+$
+
 .SH BUGS
-Detalles sorprendentes (no siempre tienen que ser problemas)
+No bugs found
+
+.SH SEE ALSO
+chdir(2), exit(3), fork(2), free(3), getline(3), isatty(3), malloc(3),
+perror(3), strtok (3), waitpid(2)
+
+.SH RETURN
+shell basic
+
 .SH AUTHOR
 \&.SH AUTHORS
 .IP \[bu] 2
