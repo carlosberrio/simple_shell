@@ -30,26 +30,47 @@ $ ls -l
 .br
 total 76
 -rwxrwxrwx 1 carlosberrio carlosberrio   315 Apr 20 17:33 AUTHORS
+.br
 -rwxrwxrwx 1 carlosberrio carlosberrio  4234 Apr 21 12:34 README.md
+.br
 -rwxrwxrwx 1 carlosberrio carlosberrio   544 Apr 20 18:00 built.c
+.br
 -rwxrwxrwx 1 carlosberrio carlosberrio   414 Apr 20 17:33 checker.c
+.br
 -rwxrwxrwx 1 carlosberrio carlosberrio   498 Apr 20 17:33 count_of_words.c
+.br
 -rwxrwxrwx 1 carlosberrio carlosberrio   289 Apr 20 17:33 env.c
+.br
 -rwxrwxrwx 1 carlosberrio carlosberrio   424 Apr 20 17:33 execution.c
+.br
 -rwxrwxrwx 1 carlosberrio carlosberrio   132 Apr 21 12:18 exit.c
+.br
 -rwxrwxrwx 1 carlosberrio carlosberrio   261 Apr 20 17:33 free_buffers.c
+.br
 -rwxrwxrwx 1 carlosberrio carlosberrio  1010 Apr 21 12:18 functions_helper.c
+.br
 -rwxrwxrwx 1 carlosberrio carlosberrio  1701 Apr 20 17:47 functions_str_add.c
+.br
 -rwxrwxrwx 1 carlosberrio carlosberrio   138 Apr 20 17:33 handle_signal.c
+.br
 -rwxrwxrwx 1 carlosberrio carlosberrio 22880 Apr 21 14:28 hsh
+.br
 -rwxrwxrwx 1 carlosberrio carlosberrio  1258 Apr 21 16:31 man_1_simple_shell
+.br
 -rwxrwxrwx 1 carlosberrio carlosberrio   286 Apr 20 17:33 prompt_user.c
+.br
 -rwxrwxrwx 1 carlosberrio carlosberrio  1243 Apr 20 17:33 shell.c
+.br
 -rwxrwxrwx 1 carlosberrio carlosberrio  1914 Apr 21 12:18 shell.h
+.br
 -rwxrwxrwx 1 carlosberrio carlosberrio  1666 Apr 21 12:18 testpath.c
+.br
 -rwxrwxrwx 1 carlosberrio carlosberrio   675 Apr 21 12:18 tokenizer.c
+.br
 -rwxrwxrwx 1 carlosberrio carlosberrio 11111 Apr 20 17:33 valgrind-out.txt
+.br
 -rwxrwxrwx 1 carlosberrio carlosberrio   863 Apr 21 12:18 warnings.c
+.br
 $
 
 .SS --------------
