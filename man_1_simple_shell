@@ -1,5 +1,6 @@
-.TH "" "" "" "" ""
-.hy
+.TH simple_shell "April - 2022" "Holberton School" "simple_shell man page"
+.\" Contact AUTHORS to correct errors or comments.
+.hy 
 .PP
 \&.\[dq] Manpage for Simple_Shell(3).
 \&.TH man 3 \[lq]22 april 2022\[rq] \[lq]1.0\[rq] \[dq]Simple_shell(3) man
