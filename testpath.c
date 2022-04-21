@@ -1,10 +1,11 @@
 #include "shell.h"
 
-/**
+/**se debe definir path y command en los comentarios
  * testpath - function that test the PATH in user environment,
  * tokenize the PATH, concatenates the command to every tokenized path
  * and checks if the command exists.
- * @token: An array of pointers with arguments.
+ * @path:
+ * * @command:
  * Return: if command exists, returns the full path.
  */
 
@@ -78,6 +79,7 @@ return (buf);
 
 while (env[x])
 {
+        /*se debe crearla propia strncmp*/
 if (strncmp(env[x], "PATH", 4) == 0)
 {
 path = strdup(env[x]);
