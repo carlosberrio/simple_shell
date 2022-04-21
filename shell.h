@@ -14,7 +14,7 @@
 #include <stdbool.h>
 #include <dirent.h>
 #include <sys/cdefs.h>
-
+/*to be deleted*/
 typedef struct params
 {
 	char **argv;
@@ -25,7 +25,7 @@ typedef struct params
 	char *name;
 	int exit_value;
 } params;
-
+/*to be deleted*/
 
 /* PROTOTYPES */
 char **tokenizer(char *str, char *worde);
