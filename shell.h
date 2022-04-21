@@ -47,8 +47,6 @@ char *_itoa(int i, char *strout, int base);
 void print_error(char *program_name, char *input, int error_num);
 int handle_builtin(char **command, char *line);
 char *find_path(void);
-/**void *_mycalloc(unsigned int num, unsigned int size);**/
-/**void *malloc(unsigned int num, unsigned int size);*/
 
 /*-----Aux functions-----*/
 extern char **environ;
@@ -66,8 +64,10 @@ void promptuser(void);
 void free_buffers(char **buf);
 /* Simple Shell Handlers */
 int main(int argcnt, char **argvtr, char *envvtr[]);
+/*to be deleted*/
 void simple_exec(params *p);
 void fork_execute(char *cmd, params *p);
+/* to be deleted*/
 char *index_path(char *path, char *command);
 
 /*STRUCTURES*/
