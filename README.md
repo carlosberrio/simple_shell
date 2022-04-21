@@ -6,6 +6,7 @@ It is a program that takes keyboard commands through the terminal and gives them
 
 ## Project description:
 This project is a simple version of the linux shell made for Holberton School.
+At the end of this project, students should be able to create a simple shell console.
 
 ## Requirements:
 **General**
@@ -44,6 +45,21 @@ But also in non-interactive mode:
 * hsh main.c shell.c test_ls_2
 * hsh main.c shell.c test_ls_2
 * $
+
+## Builtins
+ - ls
+ - pwd
+ - env
+ - exit
+ - ctrl + d
+
+## How to Install
+1. Clone this repository: git clone "https://github.com/carlosberrio/simple_shell.git"
+2. Go to directories in the repository: cd simple_shell
+3. Compiler with command: gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+4. Run the shell in interactive mode: ./hsh
+5. Or run the shell in non-interactive mode: example echo "ls" | ./hsh
+6. You can use valgrind command: "valgrind --leak-check=full --show-leak-kinds=all ./hsh"
 
 ## List of allowed functions and system calls:
 * access (man 2 access)
