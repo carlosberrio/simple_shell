@@ -24,7 +24,7 @@ Simple_shell tries to emulate sh when invoked as sh, to run it you must clone th
 .PP
 1. List files in alphabetical order:
 .PP
-$ ls
+$ ./hsh
 .br
 $ ls -l
 .br
@@ -59,7 +59,7 @@ $
 $ ./hsh
 .br
 $ pwd
-/home/vagrant/simple_shell
+/mnt/c/Users/Carlos Berrio/Desktop/simple_shell
 $
 
 .SH BUGS
