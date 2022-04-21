@@ -20,6 +20,28 @@ No more than 5 functions per file
 * All your header files should be include guarded
 Use system calls only when you need to (why?)
 
+| Name | Description |
+| ------------------------------ | -------------------------------------------- |
+| AUTHORS | Contributors in this repository.|
+| man_1_simple_shell | Manual of simple_shell. |
+| shell.h | Main file program. |
+| shell.c | Main function, ..... |
+| tokenizer.c |  |
+| warnings.c |  |
+| testhpath.c |  |
+| README.md | short explanation about project |
+| prompt_user.c |  |
+| handle_signal.c |  |
+| functions_str_add.c |  |
+| functions_helper.c |  |
+| free.bueffers.c |  |
+| exit.c |  |
+| execution.c |  |
+| env.c |  |
+| count_of_words.c |  |
+| checker.c |  |
+| built.c |  |
+
 ## Compilation:
 The shell will be compiled this way:
 * gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
