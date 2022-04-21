@@ -5,7 +5,7 @@
  * @program_name: 
  * @input: 
  * @error_num:
- * Return: 
+ * Return: archivo a ser evaluado para eliminarlo
  */
 
 void print_error(char *program_name, char *input, int error_num)
