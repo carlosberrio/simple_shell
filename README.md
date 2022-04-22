@@ -26,22 +26,21 @@ Use system calls only when you need to (why?)
 | AUTHORS | Contributors in this repository.|
 | man_1_simple_shell | Manual of simple_shell. |
 | shell.h | Main file program. |
-| shell.c | Main function, ..... |
-| tokenizer.c | |
-| warnings.c |  |
-| testhpath.c |  |
+| shell.c | infinite loop that read and execute the typed command. |
+| tokenizer.c | Function that create tokens after the typed text. |
+| testhpath.c | Function that tests path inside enviroment. |
 | README.md | short explanation about project |
-| prompt_user.c |  |
-| handle_signal.c |  |
-| functions_str_add.c |  |
-| functions_helper.c |  |
-| free.bueffers.c |  |
-| exit.c |  |
-| execution.c |  |
-| env.c |  |
-| count_of_words.c |  |
-| checker.c |  |
-| built.c |  |
+| prompt_user.c | Function that calls prompt and write $. |
+| handle_signal.c | Function that manage CRT + d. |
+| functions_str_add.c | own helper functions of strings. |
+| functions_helper.c | More own helper functions. |
+| free.bueffers.c | Function that release double pointers. |
+| exit.c | Function that manage the exit command. |
+| execution.c | Function that execute the entered command from user. |
+| env.c | Function that prints the enviroment string. |
+| count_of_words.c | Function that evaluates string. |
+| checker.c | Function that evaluates if is built-in or not. |
+| built.c | Function that execute the built-in functions. |
 
 ## Compilation:
 The shell will be compiled this way:
