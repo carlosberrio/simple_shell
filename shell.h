@@ -35,6 +35,7 @@ char *_itoa(int i, char *strout, int base);
 void print_error(char *program_name, char *input, int error_num);
 int handle_builtin(char **command, char *line);
 char *find_path(void);
+int _strncmp(char *s1, char *s2, int n);
 
 /*-----Aux functions-----*/
 extern char **environ;

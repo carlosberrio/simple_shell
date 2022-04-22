@@ -79,8 +79,7 @@ return (buf);
 
 while (env[x])
 {
-        /*se debe crearla propia strncmp*/
-if (strncmp(env[x], "PATH", 4) == 0)
+if (_strncmp(env[x], "PATH", 4) == 0)
 {
 path = strdup(env[x]);
 break;
