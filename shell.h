@@ -14,18 +14,7 @@
 #include <stdbool.h>
 #include <dirent.h>
 #include <sys/cdefs.h>
-/*to be deleted*/
-typedef struct params
-{
-	char **argv;
-	int *loop;
-	struct stat found;
-	char *buff;
-	char *cmd;
-	char *name;
-	int exit_value;
-} params;
-/*to be deleted*/
+
 
 /* PROTOTYPES */
 char **tokenizer(char *str, char *worde);
@@ -39,7 +28,6 @@ int count_of_words(char *str);
 int checker(char **cmd, char *buf);
 void print_env(void);
 void free_buffers(char **buf);
-/** void exit_cmd(char **command, char *line); **/
 int exit_cmd(void);
 void execution(char *cmds, char **cmdv);
 int _putchar(char c);
@@ -65,9 +53,6 @@ void free_buffers(char **buf);
 /* Simple Shell Handlers */
 int main(int argcnt, char **argvtr, char *envvtr[]);
 /*to be deleted*/
-void simple_exec(params *p);
-void fork_execute(char *cmd, params *p);
-/* to be deleted*/
 char *index_path(char *path, char *command);
 
 /*STRUCTURES*/
