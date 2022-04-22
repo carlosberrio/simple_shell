@@ -1,9 +1,8 @@
 #include "shell.h"
 
 /**
-* free_buffers - frees buffers
-* @buf: buffers to be freed
-*
+* free_buffers - Function that release double pointers
+* @buf: double pointers to be released
 * Return: no return
 */
 void free_buffers(char **buf)

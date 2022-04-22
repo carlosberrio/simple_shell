@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* STD LIBRARIES */
+/* Libraries */
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -15,64 +15,48 @@
 #include <dirent.h>
 #include <sys/cdefs.h>
 
-
-/* PROTOTYPES */
-char **tokenizer(char *str, char *worde);
-char *_strrev(char *str);
+/* Own helper Functions */
 char *_strcat(char *dest, char *src);
 int _strcmp(char *s1, char *s2);
 char *_strdup(char *str);
 int _strlen(char *string);
-void handle_signal(int m);
-int count_of_words(char *str);
-int checker(char **cmd, char *buf);
-void print_env(void);
 void free_buffers(char **buf);
-int exit_cmd(void);
-void execution(char *cmds, char **cmdv);
-int _putchar(char c);
-char *_itoa(int i, char *strout, int base);
-void print_error(char *program_name, char *input, int error_num);
-int handle_builtin(char **command, char *line);
-char *find_path(void);
 int _strncmp(char *s1, char *s2, int n);
 
-/*-----Aux functions-----*/
+/* Macro */
 extern char **environ;
-
-
-/* String Handlers */
-void handle_signal(int sn);
 
 /* Path & Search Handlers */
 char *test_path(char **path, char *command);
-void promptuser(void);
-
+char *index_path(char *path, char *command);
+char *find_path(void);
 
 /* Built-ins Functions */
-void free_buffers(char **buf);
-/* Simple Shell Handlers */
+void print_env(void);
+int exit_cmd(void);
+
+/* Core functions */
 int main(int argcnt, char **argvtr, char *envvtr[]);
-/*to be deleted*/
-char *index_path(char *path, char *command);
+char **tokenizer(char *str, char *worde);
+void handle_signal(int m);
+int count_of_words(char *str);
+int checker(char **cmd, char *buf);
+void execution(char *cmds, char **cmdv);
+int handle_builtin(char **command, char *line);
+void handle_signal(int sn);
+void promptuser(void);
 
 /*STRUCTURES*/
 
 struct builtin
 {
-	char *env;
-	char *exit;
+char *env;
+char *exit;
 } builtin;
-
-struct info
-{
-	int final_exit;
-	int ln_count;
-} info;
 
 struct flags
 {
-	bool interactive;
+bool interactive;
 } flags;
 
 #endif /* MAIN_H */

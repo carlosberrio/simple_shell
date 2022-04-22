@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * tokenizer - Function that split a string.
- * @str: string to split.
- * @worde: words delimiter.
- * Return: separated words
+ * tokenizer - Function that create tokens after the typed text.
+ * @str: pointer string that contains succesfull path
+ * @worde: character delimiter
+ * Return: Tokenized string.
  */
 
 char **tokenizer(char *str, char *worde)

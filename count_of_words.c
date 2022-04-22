@@ -3,8 +3,8 @@
 #define ENTRADA 1
 
 /**
- * count_of_words - function that counts words depending on delimiters
- * @str: string to be evaluated.
+ * count_of_words - Function that evaluates string.
+ * @str: string to be counted
  * Return: number of words in the string.
  */
 

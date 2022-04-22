@@ -1,37 +1,10 @@
 #include "shell.h"
 
 /**
- * _strrev - Function that reverse a string
- * @str: string to reverse
- * Return: reversed string
- */
-
-char *_strrev(char *str)
-{
-int i;
-int len = 0;
-char c;
-
-if (!str)
-return (NULL);
-while (str[len] != '\0')
-{
-len++;
-}
-for (i = 0; i < (len / 2); i++)
-{
-c = str[i];
-str[i] = str[len - i - 1];
-str[len - i - 1] = c;
-}
-return (str);
-}
-
-/**
 * _strcat - function that concatenates two strings
-* @dest: string one, where concatenated string is saved.
-* @src: string two, that will be copied in dest.
-* Return: concatenated string.
+* @dest: pointer string where the result is saved.
+* @src: pointer string that will be copied in dest.
+* Return: string dest + src
 */
 
 char *_strcat(char *dest, char *src)
@@ -51,27 +24,26 @@ return (dest);
 
 /**
 * _strcmp - function that compares two strings.
-* @s1: string 1 to compare.
-* @s2: string 2 to compare.
-* Return: 0 if strings are equal, 1 if strings are different.
+* @s1: pointer string.
+* @s2: pointer string.
+* Return: 0 = equal, 1 = different.
 */
 
 int _strcmp(char *s1, char *s2)
 {
-	int i;
+int i;
 
-	for (i = 0; s1[i] != '\0'; i++)
-		if (s1[i] != s2[i])
-			return (-1);
-	return (0);
+for (i = 0; s1[i] != '\0'; i++)
+if (s1[i] != s2[i])
+return (-1);
+return (0);
 }
 
 
 /**
- * _strdup -  function that duplicates a string
- * in a newly allocated space in memory.
- * @str: string to be copied.
- * Return: Duplicated string in success.
+ * _strdup -  function that duplicates given string
+ * @str: string duplicated and stored in a new memory space
+ * Return: string that is duplicated and allocated
  */
 
 char *_strdup(char *str)
@@ -85,21 +57,17 @@ return (NULL);
 i = _strlen(str);
 
 new_s = malloc(sizeof(char) * (i + 1));
-
 if (new_s == NULL)
 {
 perror("./hsh");
 return (NULL);
 }
-
 if (i == 0 || new_s == 0)
 return (NULL);
-
 while (j < (i + 1))
 {
 new_s[j] = str[j];
 j++;
 }
-
 return (new_s);
 }

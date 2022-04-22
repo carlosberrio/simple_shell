@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
-* print_env - prints the environment string to stdout
+* print_env - Function that prints the enviroment string.
 *
 * Return: 0
 */

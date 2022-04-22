@@ -24,8 +24,8 @@ promptuser();
 linesize = getline(&line, &bufsize, stdin);
 if (linesize < 0)
 {
-    free(line);
-    break;
+free(line);
+break;
 }
 
 command = tokenizer(line," \n\t");
@@ -42,12 +42,12 @@ else
 pathcommand = _strdup(command[0]);
 if (!pathcommand)
 {
-    perror(argvtr[0]);
-    free(pathcommand);
-    free(paths);
-    free(path);
-    free(command);
-    continue;
+perror(argvtr[0]);
+free(pathcommand);
+free(paths);
+free(path);
+free(command);
+continue;
 }
 else
 execution(pathcommand, command);

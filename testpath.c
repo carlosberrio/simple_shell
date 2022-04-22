@@ -1,12 +1,10 @@
 #include "shell.h"
 
-/**se debe definir path y command en los comentarios
- * testpath - function that test the PATH in user environment,
- * tokenize the PATH, concatenates the command to every tokenized path
- * and checks if the command exists.
- * @path:
- * * @command:
- * Return: if command exists, returns the full path.
+/**
+ * testpath - Function that tests path inside enviroment.
+ * @path: tokenized path.
+ * @command: array of tokenized commands
+ * Return: if command exists, returns the command path.
  */
 
 char *test_path(char **path, char *command)
@@ -26,12 +24,10 @@ return (NULL);
 }
 
 /**
-* index_path - adds path to command
-* @path: path of command
-* @command: user entered command
-*
-* Return: buffer containing command with path on success
-* NULL on failure
+* index_path - function that index with succesfull commands
+* @path: tokenized path
+* @command: array of tokenized commands
+* Return: command succesfull path or NULL if fails
 */
 char *index_path(char *path, char *command)
 {
@@ -69,13 +65,13 @@ return (buf);
 }
 
 /**
-* find_path - finds the path from the global enviroment
-* Return: NULL if path is not found or path if path is found.
+* find_path - function that looks for succesfull path
+* Return: NULL = false or path = true.
 */
-        char *find_path(void)
-        {
-        int x = 0;
-        char **env = environ, *path = NULL;
+char *find_path(void)
+{
+int x = 0;
+char **env = environ, *path = NULL;
 
 while (env[x])
 {
@@ -89,4 +85,4 @@ x++;
 if (!path)
 return (NULL);
 return (path);
-        }
+}

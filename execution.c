@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * execution - executes commands entered by users
- *@cmds: command
-*@cmdv:vector array of pointers to commands
-* Return: 0
+ * execution - Function that execute the entered command from user
+ * @cmds: typed command by user
+ * @cmdv: commands vector result from tokenizer
+ * Return: 0
 */
 void execution(char *cmds, char **cmdv)
 {
