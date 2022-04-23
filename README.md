@@ -117,7 +117,7 @@ But also in non-interactive mode:
 * write (man 2 write)
 
 ## FLOWCHART
-![link](https://postimg.cc/hzDw49st)
+![link](https://i.postimg.cc/TwgX90Wg/Imagen-Flow-Chart.jpg)
 
 ## BLOG - What happens when you type `ls -l *.c` in the shell
 [BLOG](https://medium.com/@4634/9af1e0f08220)
