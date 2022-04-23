@@ -116,6 +116,9 @@ But also in non-interactive mode:
 * wait4 (man 2 wait4)
 * write (man 2 write)
 
+## FLOWCHART
+![link](https://postimg.cc/hzDw49st)
+
 ## BLOG - What happens when you type `ls -l *.c` in the shell
 [BLOG](https://medium.com/@4634/9af1e0f08220)
 
