@@ -9,7 +9,7 @@
 
 char **tokenizer(char *str, char *worde)
 {
-int i = 0, cow = 0;
+    int i = 0, cow = 0;
 char **separated_words = NULL;
 cow = count_of_words(str);
 separated_words = malloc(sizeof(char *) * (cow + 1));
